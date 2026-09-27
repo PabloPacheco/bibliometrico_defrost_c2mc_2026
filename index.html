@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+<!-- https://raw.githack.com/PabloPacheco/doctorado_alimentos/main/bibliometrico_defrost.html -->
+		<title>Propuesta de Tesis Doctorado</title>
+
+		<meta name="description" content=" ">
+		<meta name="author" content="PPP">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+        <!-- Black - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized  -->
+                            
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="plugin/highlight/night.css">
+        
+      
+        <style>
+            /* Estilo para el cuadro */
+            #miCuadro {
+                position: fixed;
+                bottom: 100%;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.);
+                color: #fff;
+                padding: 6px;
+            }     
+          
+          .highlight-box {
+                background-color: rgba(0, 0, 0, 0.85);  /* negro con algo de transparencia */
+                color: white;                          /* letra blanca */
+                border: 2px solid white;              /* borde blanco */
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 22px;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* sombra blanca suave */
+              }          
+          
+            .reveal {
+              background-color: #000000 !important;
+            }
+
+            .reveal .slides {
+              background: transparent !important;
+            }
+          
+            /* Estilos personalizados para el número de la diapositiva */
+            .reveal .slide-number {
+                position: absolute;
+                bottom: 10px;
+                left: 10px; /* Cambia la posición horizontal */
+                font-size: 33px; /* Cambia el tamaño del número */
+                color: white; /* Cambia el color del número */
+            }
+            
+            
+            .twocolumn {
+               display: flex;
+               align-items: center;
+               justify-content: space-around;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 5px;
+               text-align: left;
+            }
+            
+            
+            .twocolumn div {
+                flex: 1;  /* Permite que las columnas ocupen el mismo ancho */
+                text-align: center;  /* Centra el contenido horizontalmente */
+            }
+            
+            .two-column-list {
+                column-count: 2;
+                column-gap: 9px;  /* Espacio entre las columnas */
+            }
+        
+            /* Reduce el tamaño del texto de todo el menú inferior */
+            .menu, .simplemenu, [class*="menu"] {
+                font-size: 33px !important; /* Ajusta este número (0.5em, 14px, etc.) hasta que quede como deseas */
+            }
+
+            /* Opcional: Reduce el tamaño de los elementos de la lista de forma individual y su espaciado */
+            .menu li, .simplemenu li {
+                font-size: 21px !important; 
+                padding: 0 10px !important; /* Reduce el espacio horizontal entre secciones si están muy juntas */
+            }
+            
+        </style>
+        
+        
+	</head>
+    
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+  
+            <div class="menubar">
+                <ul class="menu"></ul> 
+            </div>
+
+<!--
+Fade In/Out:
+
+fragment fade-in: Hace que el fragmento aparezca con un efecto de desvanecimiento.
+fragment fade-out: Hace que el fragmento desaparezca con un efecto de desvanecimiento.
+Slide:
+
+fragment fade-left: Hace que el fragmento aparezca deslizándose desde la izquierda.
+fragment fade-right: Hace que el fragmento aparezca deslizándose desde la derecha.
+fragment fade-up: Hace que el fragmento aparezca deslizándose desde arriba.
+fragment fade-down: Hace que el fragmento aparezca deslizándose desde abajo.
+Zoom:
+
+fragment zoom-in: Hace que el fragmento aparezca con un efecto de zoom hacia adentro.
+fragment zoom-out: Hace que el fragmento desaparezca con un efecto de zoom hacia afuera.
+Grow/Shrink:
+
+fragment grow: Hace que el fragmento aparezca creciendo.
+fragment shrink: Hace que el fragmento desaparezca encogiéndose.
+Highlight:
+
+fragment highlight-current-blue: Hace que el fragmento actual se resalte en azul.
+fragment highlight-current-red: Hace que el fragmento actual se resalte en rojo.
+-->                
+                
+
+<!--||||||||||||||||||||||||||||||||||||||-->
+<!--||||||||||||||PORTADA|||||||||||||||||-->
+<!--||||||||||||||||||||||||||||||||||||||-->                
+                
+                
+            <section data-state="hide-menubar hide-menu">
+              
+              
+              
+                <section>
+                  <!-- Logos superiores -->
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <!-- Logo izquierda -->
+                    <img src="imagenes/Universidad_de_La_Serena_escudo.png" style="height: 90px;">
+
+                    <!-- Logo centro -->
+                    <img src="imagenes/logo_c2mc_2025.png" style="width: 129px;">
+
+                    <!-- Logo derecha -->
+                    <img src="imagenes/logo_UCM.png" style="height: 93px;">
+                  </div>
+
+                  <!-- Título -->
+                  <h6 style="margin-top: 18px;">EXPLORACIÓN COMPUTACIONAL DE LITERATURA CIENTÍFICA MEDIANTE ANÁLISIS BIBLIOMÉTRICO E INTELIGENCIA ARTIFICIAL</h6>
+
+                  <!-- Autores -->
+                  <p style="font-size: 18px; text-align: center; margin-top: 15px;">
+                    <u>P. Pacheco</u><sup>1</sup>, I. Quispe<sup>2</sup> y L. Silva<sup>3</sup>
+                  </p>
+
+                  <!-- Instituciones -->
+                  <p style="font-size: 15px; text-align: center; line-height: 1.5; margin-top: 15px;">
+                    <sup>1</sup> Departamento de Ingeniería Mecánica – Universidad de La Serena <br>
+                    Benavente 980 – La Serena – CHILE <br>
+                    e-mail: ppacheco@userena.cl<br>
+                    
+                    <sup>2</sup> Departamento de Ingeniería en Alimentos – Universidad de La Serena <br>
+                    Av. Raúl Bitrán Nachary Nº 1305 – La Serena – CHILE <br>
+                    e-mail: iquispe@userena.cl<br>
+                    
+                    <sup>3</sup>Departamento de Ingeniería Mecánica – Universidad Técnica Federico Santa María<br>
+                    Avenida España 1680 –Valparaíso – CHILE <br>
+                    e-mail: luis.silval@usm.cl<br>
+                  </p>
+
+                  <!-- Congreso al pie -->
+                  <p style="font-size: 16px; text-align: center; margin-top: 25px;">
+                    <strong>XXIV Congreso Chileno de Mecánica Computacional</strong>
+                  </p>
+                </section>
+
+
+                <section>
+                  <h6>Contenido</h6>
+
+                  <div style="display: flex; gap: 50px; justify-content: space-between; font-size: 25px;">
+                    <!-- Columna 1 -->
+                    <div style="flex: 1; text-align: justify;">
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Motivación</strong></p>
+                      </div>
+
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Análisis bibliométrico</strong></p>
+                        <ul>
+                          <li>Extracción de datos y Procesamiento</li>
+                          <li>Espectroscopía de año de publicaciones</li>
+                          <li>Análisis de redes</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div style="flex: 1; text-align: justify;">
+                      <div class="fragment fade-in-then-semi-out">
+                        <p><strong>Inteligencia Artificial</strong></p>
+                        <ul>
+                          <li>Modelación de tópicos</li>
+                          <li>Análisis de Resultados</li>
+                        </ul>
+                        <p><strong>Conclusiones</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            </section>
+
+            <section data-name="Motivación">                      
+              
+                <section>
+                  <h4>Motivación</h4>
+
+                  <div class="twocolumn" style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <!-- Columna de texto -->
+                    <div style="flex: 1; font-size: 20px; text-align: justify;">
+
+                      <div class="fragment fade-in" style= "text-align: left;">
+                        <p><strong>Crisis a nivel mundial</strong></p>
+                        <ul>
+                          <li>Cambio climático</li>
+                          <li>Pérdida de naturaleza y biodiversidad</li>
+                          <li>Contaminación y desechos</li>
+                        </ul>
+                      </div>
+
+                      <div class="fragment fade-in" style= "text-align: left;">
+                        <p><strong>Agenda 2030</strong></p>
+                        <ul>
+                          <li>Objetivos de desarrollo sostenible (SDG)</li>
+                          <li>Mejorar la sostenibilidad de la cadena de frío de los alimentos</li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <!-- Columna de imagen -->
+                    <div style="flex: 1; text-align: center;">
+                      <img src="imagenes/motivacion1.png" alt="Motivación" style="max-width: 100%; max-height: 350px;">
+                    </div>
+
+                  </div>
+                </section>
+              
+                <section>
+                  <h4>Motivación</h4>
+
+                  <div class="twocolumn" style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <!-- Columna de texto -->
+                    <div style="flex: 1; font-size: 20px; text-align: left;">
+
+                      <div class="fragment fade-in" style="text-align: left;">
+                        <p><strong>Total de alimentos para consumo humano</strong></p>
+                        <ul>
+                          <li>Se pierde un 14% <sup>(1)</sup></li>
+                          <li>Se desperdicia un 17% <sup>(2)</sup></li>
+                          <li>Costo para economía mundial: 936.000M USD/año <sup>(3)</sup></li>
+                        </ul>
+                      </div>
+
+                      <div class="fragment fade-in" style="text-align: left;">
+                        <p><strong>Falta de refrigeración eficaz</strong></p>
+                        <ul>
+                          <li>En 2017 se perdió el 12% de producción alimentaria mundial <sup>(4)</sup></li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                    <!-- Columna de imagen -->
+                    <div style="flex: 1; text-align: center;">
+                      <img src="imagenes/motivacion3.png" alt="Pérdida de alimentos" style="max-width: 100%; max-height: 350px;">
+                    </div>
+
+                  </div>
+
+                  <!-- Referencias al pie -->
+                  <div style="font-size: 12px; margin-top: 30px; text-align: left; column-count: 2">
+                    <p>(1) Organización de las Naciones Unidas para la Alimentación y la Agricultura [FAO], 2019</p>
+                    <p>(2) PNUMA, 2021</p>
+                    <p>(3) FAO, 2014a</p>
+                    <p>(4) Instituto Internacional de Refrigeración [IIF/IIR], 2021a</p>
+                  </div>
+                </section>
+              
+                <section>
+                    <h4>Problema: Deshielo de evaporadores</h4>
+
+                    <p class="fragment" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                        El agua contenida en el aire se condensa sobre las aletas y los tubos $\rightarrow$ formación de hielo
+                    </p> 
+                    <div class="r-stack">
+                        <img class = "fragment current-visible" src="imagenes/evaporator2.jpg" width="650">
+                        <img class = "fragment current-visible" src="imagenes/subzero_not_defrosting.jpg" width="650">
+                    </div>
+
+</section>    
+
+                <section>
+                  <h4>Formación de escarcha en sistemas HVAC y refrigeración</h4>
+
+                  <!-- Dos columnas -->
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 20px;">
+
+                    <!-- Columna izquierda: lista de ítems -->
+                    <div style="flex: 1;">
+                      <ul style="font-size: 21px;">
+                        <li class="fragment">
+                          Actúa como aislante térmico.
+                        </li>
+                        <li class="fragment">
+                          Disminuye el COP del sistema y aumenta el consumo energético.
+                        </li>
+                        <li class="fragment">
+                          Puede reducir hasta en un 75 % la eficiencia de transferencia de calor.
+                        </li>
+                      </ul>
+
+                      <!-- Referencia -->
+                      <p style="font-size: 14px; margin-top: 20px;text-align: left;">
+                        Sarmiento, A. P., de Sá Sarmiento, F. I., Shooshtari, A., and Ohadi, M. (2024). <em>A review of recent progress in active frost prevention/control techniques in refrigeration and HVAC systems</em>. Applied Thermal Engineering, 253, 123680.
+                      </p>
+                    </div>
+
+                    <!-- Columna derecha: espacio para imagen -->
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: left;">
+                      <img src="imagenes/frost.jpg" alt="Ejemplo de formación de escarcha" style="max-width: 100%; max-height: 400px;" />
+                    </div>
+
+                  </div>
+                </section>  
+        
+            </section>
+              
+              
+                                                              
+            <section data-name="Exploración">
+                                            
+                <section>
+                  <h4>Análisis bibliométrico</h4>
+
+                  <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
+
+                    <!-- Columna izquierda: texto -->
+                    <div style="flex: 1;">
+                      <p class="fragment fade-left" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Evaluar y visualizar la producción científica - estudio cuantitativo.
+                      </p>                  
+                      <p class="fragment fade-right" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Seleccionar revistas o congresos con alta probabilidad de publicación.
+                      </p>
+                      <p class="fragment fade-up" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Identificar líderes en trabajos, autores e instituciones.
+                      </p>
+                      <p class="fragment fade-down" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Evaluar colaboraciones que generan mayor visibilidad.
+                      </p>
+                      <p class="fragment fade-left" style="font-size: 22px; text-align: justify; text-align-last: left;">
+                        Detectar temas emergentes y oportunidades de innovación.
+                      </p>
+                    </div>
+
+                    <!-- Columna derecha: imagen -->
+                    <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+                      <img src="imagenes/bibliometrico.png" alt="Análisis bibliométrico" style="max-width: 100%; max-height: 400px;">
+                    </div>
+
+                  </div>
+                </section>
+
+<!--
+https://www.youtube.com/watch?v=U2ktTVIqdkQ&ab_channel=AMRESupply
+https://www.youtube.com/watch?v=d_LgySDSND4&ab_channel=AMRESupply
+-->
+
+
+                <section>
+                    <h4>Análisis bibliométrico - Procesamiento de datos</h4>
+
+                        <ul class="fragment fade-in-then-semi-out" style="font-size: 18px; text-align: left; text-align-last: left;">
+                            <li>WOS</li>
+                            <li>Búsqueda: TS = (evaporator* AND (defrosting* OR anti-frosting* OR defrost*))</li>
+                            <li>Documentos: Papers | Review</li>
+                            <li>Intervalo de tiempo: 1978 - 2025</li>
+                            <li>N° de documentos: 314</li>
+                            
+                        </ul>
+
+                          <div style="
+                              margin-top:18px;
+                              background:#eef6ff;
+                              border:2px solid #4f81bd;
+                              border-radius:10px;
+                              padding:15px;
+                          ">
+
+                              <h4 style="
+                                  margin-top:0;
+                                  margin-bottom:12px;
+                                  text-align:center;
+                                  color:#245a9c;
+                              ">
+                                  Exported metadata (Web of Science)
+                              </h4>
+
+                              <div style="
+                                  columns:3;
+                                  column-gap:35px;
+                                  font-size:18px;
+                                  line-height:1.45;
+                                  color:black;
+                                  text-align:left;
+                              ">
+
+                                  ✓ Author(s)<br>
+                                  ✓ Title<br>
+                                  ✓ Source<br>
+                                  ✓ Conf. Info/Sponsors<br>
+                                  ✓ Times Cited Count<br>
+                                  ✓ Accession Number<br>
+                                  ✓ Authors Identifiers<br>
+                                  ✓ ISSN<br>
+                                  ✓ PubMed ID<br>
+
+                                  ✓ Abstract<br>
+                                  ✓ Addresses<br>
+                                  ✓ Affiliations<br>
+                                  ✓ Document Type<br>
+                                  ✓ Keywords<br>
+                                  ✓ WoS Categories<br>
+                                  ✓ Research Areas<br>
+                                  ✓ WoS Editions<br>
+
+                                  ✓ Cited References<br>
+                                  ✓ Cited Reference Count<br>
+                                  ✓ Usage Count<br>
+                                  ✓ Hot Paper<br>
+                                  ✓ Highly Cited<br>
+                                  ✓ Funding Information<br>
+                                  ✓ Publisher Information<br>
+                                  ✓ Open Access<br>
+                                  ✓ Page Count<br>
+                                  ✓ Source Abbrev.<br>
+                                  ✓ IDS Number<br>
+                                  ✓ Language
+
+                              </div>
+
+                          </div>             
+
+                </section>    
+              
+              
+                <section>
+                  <h4>Análisis Bibliométrico - Herramientas</h4>
+                  <!-- Logos en dos columnas -->
+                  <div style="display: flex; justify-content: center; align-items: center; gap: 60px; margin: 20px 0;">
+                    <img src="imagenes/python-logo.png" alt="Python Logo" width="300" />
+                    <img src="imagenes/Google_Colaboratory.png" alt="Google Colab Logo" width="150" />
+                  </div>
+
+                  <!-- Lista de herramientas -->
+                  <ul style="font-size: 24px;">
+                    <li class="fragment">
+                      <strong>litstudy</strong>
+                      <p style="font-size: 14px; margin-top: 5px;">
+                        Heldens, S. et al. (2022). <em>litstudy: A Python package for literature reviews</em>. SoftwareX, 20, 101207.  
+                        <br>Amsterdam Science Park.
+                      </p>
+                    </li>
+                    <li class="fragment">
+                      <strong>pybibx</strong>
+                      <p style="font-size: 14px; margin-top: 5px;">
+                        Pereira, V., Basilio, M. P., and Santos, C. H. T. (2025). <em>PyBibX – a Python library for bibliometric and scientometric analysis powered with artificial intelligence tools</em>. Data Technologies and Applications.  
+                        <br>Universidade Federal Fluminense.
+                      </p>
+                    </li>
+                    <li class="fragment">
+                      <strong>metaknowledge</strong>
+                      <p style="font-size: 14px; margin-top: 5px;">
+                        McLevey, J., and McIlroy-Young, R. (2017). <em>Introducing metaknowledge: Software for computational research in information science, network analysis, and science of science</em>. Journal of Informetrics, 11(1), 176–197.  
+                        <br>University of Waterloo - University of Chicago.
+                      </p>
+                    </li>
+                  </ul>
+                </section>
+                
+                
+                <section>
+                  <h4>Análisis bibliométrico - Reporte general</h4>
+                  <p style="font-size: 14px; margin-top: -10px;">Generado con PyBibX</p>
+
+                  <div style="display: flex; justify-content: center; gap: 60px; font-size: 20px; margin-top: 20px;">
+
+                    <!-- Columna 1 -->
+                    <table style="border-collapse: collapse;">
+                      <tbody>
+                        <tr><td><strong>Timespan</strong></td><td>1978–2025</td></tr>
+                        <tr><td><strong>Countries</strong></td><td>34</td></tr>
+                        <tr><td><strong>Institutions</strong></td><td>268</td></tr>
+                        <tr><td><strong>Sources</strong></td><td>68</td></tr>
+                        <tr><td><strong>References</strong></td><td>4660</td></tr>
+                        <tr><td><strong>Languages</strong></td><td>3</td></tr>
+                        <tr><td><strong>Documents</strong></td><td>300</td></tr>
+                        <tr><td><strong>Article</strong></td><td>230</td></tr>
+                        <tr><td><strong>Retracted Publication</strong></td><td>1</td></tr>
+                        <tr><td><strong>Proceedings Paper</strong></td><td>55</td></tr>
+                      </tbody>
+                    </table>
+
+                    <!-- Columna 2 -->
+                    <table style="border-collapse: collapse;">
+                      <tbody>
+                        <tr><td><strong>Review</strong></td><td>12</td></tr>
+                        <tr><td><strong>Avg Docs/Author</strong></td><td>1.32</td></tr>
+                        <tr><td><strong>Avg Docs/Institution</strong></td><td>8.71</td></tr>
+                        <tr><td><strong>Avg Docs/Source</strong></td><td>3.66</td></tr>
+                        <tr><td><strong>Avg Docs/Year</strong></td><td>8.11</td></tr>
+                        <tr><td><strong>Authors</strong></td><td>919</td></tr>
+                        <tr><td><strong>Keywords</strong></td><td>699</td></tr>
+                        <tr><td><strong>Keywords Plus</strong></td><td>359</td></tr>
+                        <tr><td><strong>Single-Authored</strong></td><td>11</td></tr>
+                        <tr><td><strong>Multi-Authored</strong></td><td>289</td></tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+                </section>
+                
+              
+                <section>                
+                  <h4>Análisis bibliométrico - Reporte general</h4>
+                  <img src="imagenes/defrost_publications_year.png" width="666">
+
+                    <p style="font-size: 16px; text-align: justify;">
+                      TS = (evaporator* AND (defrosting* OR anti-frosting* OR defrost*))
+                    </p>   
+                       
+                </section>
+                
+                    
+                <section>
+                    <h4>Análisis bibliométrico - Reporte general</h4>
+                        <img src = "imagenes/defrost_top_words.png" width = "999">
+                  
+                    <p style="font-size: 16px; text-align: justify;">
+                      TS = (evaporator* AND (defrosting* OR anti-frosting* OR defrost*))
+                    </p>   
+
+                </section>
+              
+                <section>
+                    <h4>Evolución de Palabras por Año</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/words_years_pibibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>   
+              
+              
+                <section>
+                    <h4>Diagrama de Sankey</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/sankey_pibibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>     
+              
+              
+                <section>
+                    <h4>Productividad por Universidades</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/productividad_universidades_pibibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>    
+              
+                <section>
+                    <h4>Productividad por Revistas</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/productividad_revista_pibibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>    
+              
+<!--
+                <section>
+                    <h4>Palabras Clave por Países</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/keys_countries_pibibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>     
+-->              
+              
+                <section>
+                    <h4>Palabras por Países - Mapa de Calor</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/heat_keywords_cout_pybibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>     
+              
+                <section>
+                    <h4>Palabras por Revistas - Mapa de Calor</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/heat_keywords_pybibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>    
+              
+              
+                <section>
+                    <h4>Mapa de Colaboración entre Países</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/html_files/mapa_colab_paises_pybibx.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>   
+              
+           </section>   
+           
+              
+            <section data-name="RPYS">
+<!--- INICIO RPYS -->
+              
+
+                <section>
+                  <h6>Espectroscopía del Año de Publicación de Referencia (RPYS)</h6>
+
+                  <!-- Ideas resumidas en dos columnas con fade-in conjunto -->
+                  <div class="fragment fade-in" style="display: flex; justify-content: space-between; gap: 30px; margin-bottom: 20px;">
+                    <div style="flex: 1;">
+                      <p style="font-size: 17px; text-align: justify;">
+                        Analiza el impacto histórico de publicaciones científicas.
+                      </p>
+                      <p style="font-size: 17px; text-align: justify;">
+                        Detecta años pico en citas y contribuciones clave.
+                      </p>
+                    </div>
+                    <div style="flex: 1;">
+                      <p style="font-size: 17px; text-align: justify;">
+                        Muestra la influencia acumulada a lo largo del tiempo.
+                      </p>
+                      <p style="font-size: 17px; text-align: justify;">
+                        Usa desviación respecto a la mediana para ajustar datos.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Referencias visibles desde el inicio -->
+                  <div style="margin-top: 20px; font-size: 14px; text-align: left;">
+                    <p>
+                      Comins, J. A., and Hussey, T. W. (2015). Compressing multiple scales of impact detection by Reference Publication Year Spectroscopy. <em>Journal of Informetrics</em>, 9(3), 449–454.
+                    </p>  
+                    <p>
+                      Wray, K. B., and Bornmann, L. (2015). Philosophy of science viewed through the lens of “Referenced Publication Years Spectroscopy” (RPYS). <em>Scientometrics</em>, 102, 1987–1996.
+                    </p>
+                  </div>
+                </section>
+              
+                          
+                <section>
+                  <h6 style="color: white;">Espectroscopía del Año de Publicación de Referencia</h6>
+
+                  <div style="text-align: center; margin-bottom: 20px;">
+                    <img class="fragment fade-in" src="imagenes/rpys_final.png" style="width: 900px;" />
+                  </div>
+                  
+                </section>
+              
+                <section>
+                  <h6 style="color: white;">Espectroscopía</h6>
+
+                  <div style="width: 95%; margin: 0 auto; color: white;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 18px; color: white;">
+                      <thead>
+                        <tr style="background-color: #333;">
+                          <th style="border: 1px solid white; padding: 8px; text-align: left;">Cita</th>
+                          <th style="border: 1px solid white; padding: 8px; text-align: center;">Nº de citas</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Song et al. (2018). Review on improvement for air source heat pump units during frosting and defrosting. <i>Applied Energy, 211, 1150–1170</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">39</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Song et al. (2018). Experimental study on time-based start defrosting control strategy optimization for air source heat pumps. <i>Energy and Buildings, 178, 26–37</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">22</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Amer and Wang (2017). Review of passive defrosting surface methods in refrigeration systems.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">34</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Li et al. (2017). Improving defrosting performance by controlling frost distribution in household refrigerators. <i>International Journal of Refrigeration, 77, 136–148</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">15</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Wang et al. (2015). Effects of surface characteristic on frosting and defrosting in fin-tube heat exchangers. <i>Applied Thermal Engineering, 75, 1126–1132</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">24</td>
+                        </tr>
+                        <tr>
+                          <td style="border: 1px solid white; padding: 8px;">
+                            Zhu et al. (2015). Temperature–Humidity–Time defrosting control method for air-source heat pumps. <i>International Journal of Refrigeration, 54, 45–54</i>.
+                          </td>
+                          <td style="border: 1px solid white; padding: 8px; text-align: center;">23</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+              
+              
+                <section>
+                  <h6 style="color: white;">Espectroscopía</h6>
+
+                  <div style="text-align: center; margin-bottom: 20px;">
+                    <img class="fragment fade-in" src="imagenes/defrost_multi_rpys.png" style="width: 690px;" />
+                  </div>
+                  
+                </section>     
+                                                                                                                 
+           </section>
+<!--- ANALISIS DE REDES -->
+              
+              
+          <section data-name="Redes">
+                <section>
+                  <h4>Análisis de Redes</h4>
+                  <div style="display: flex; gap: 40px; align-items: flex-start;">
+
+                    <div style="flex: 1;">
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Permite estudiar la colaboración entre investigadores y las corrientes intelectuales de un campo.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Se analizan redes de: coautoría, citación directa, acoplamiento bibliográfico y co-citación.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Un grafo se define como una estructura matemática que modela las relaciones entre entidades académicas:<br><br>
+                        $$ G(V, E) $$
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Donde:
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        <strong>Nodos (V)</strong>: representan unidades discretas como autores, artículos o palabras clave.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        <strong>Aristas (E)</strong>: representan relaciones entre nodos, como colaboraciones o citaciones.
+                      </p>
+
+                      <p class="fragment fade-in" style="font-size: 16px; text-align: justify;">
+                        Los conjuntos se definen como:<br><br>
+                        $$ V = \{v_1, v_2, ..., v_N\} \quad \text{y} \quad E = \{e_1, e_2, ..., e_M\} $$
+                      </p>
+                    </div>
+
+                    <div style="flex: 1; text-align: center;">
+                      <img src="imagenes/network.svg" alt="Ejemplo de red" style="max-width: 80%; height: auto;">
+                    </div>
+
+                  </div>
+                </section>
+                        
+
+
+              
+                <section>
+                  <h4>Red de Coautoría</h4>
+                  <div style="display: grid; grid-template-columns: 55% 45%; gap: 10px;">
+
+                    <div>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Se define un grafo no dirigido $\mathcal{G}_C = (V, E)$ donde:
+                        <br>
+                        • $V = \{a_1, a_2, \dots, a_n\}$ es el conjunto de autores.
+                        <br>
+                        • $E = \{(a_i, a_j) \mid \exists\, p_k \text{ tal que } a_i, a_j \, \text{coautores de } p_k\}$.
+                      </p>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Representa colaboraciones académicas y permite identificar comunidades activas o investigadores influyentes.
+                      </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                      <img src="imagenes/co-author_network.svg" style="width: 95%;"/>
+                    </div>
+
+                  </div>
+                </section>
+              
+                <section>
+                    <h4>Red de Coautores</h4>
+                        <div class = "p_iframe">
+                            <iframe src="imagenes/defrost_network_coauthor_ok.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>    
+              
+                <section>
+                  <h4>Red de Coautores</h4>
+                    <img src = "imagenes/centrality_co-author_network.png" width = "800">            
+                </section>     
+              
+              
+                <section>
+                  <h4>Red de Citación</h4>
+                  <div style="display: grid; grid-template-columns: 55% 45%; gap: 10px;">
+
+                    <div>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Grafo dirigido $\mathcal{G}_{\text{Cit}} = (V, E)$ donde:
+                        <br>
+                        • $V = \{d_1, d_2, \dots, d_n\}$ es el conjunto de documentos.
+                        <br>
+                        • $E = \{(d_i, d_j) \mid d_i \text{ cita a } d_j\}$.
+                      </p>
+                      <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                        Esta red modela el flujo de conocimiento científico. Los nodos con muchas citas recibidas representan trabajos influyentes.
+                      </p>
+                    </div>
+
+                    <div style="text-align: center;">
+                      <img src="imagenes/citation_network.svg" style="width: 95%;"/>
+                    </div>
+
+                  </div>
+                  
+                  <p class="fragment fade-in" style="font-size: 14px; margin-top: 5px; text-align: left">
+                    Small, H. (1973). Co‐citation in the scientific literature: A new measure of the relationship between two documents. Journal of the American Society for information Science, 24(4), 265-269.
+                  </p>                                                      
+                </section>
+              
+                <section>
+                    <h4>Red de Citación</h4>
+                        <div class = "p_iframe">
+                          <iframe src="imagenes/defrost_network_citation_ok.html" width="1200" height="500" style="border:none;"></iframe>                
+                        </div>  
+                </section>     
+              
+                <section>
+                  <h4>Red de Citación</h4>
+                    <img src = "imagenes/centrality_citation_network.png" width = "800">            
+                </section>                  
+              
+          </section>    
+<!--              
+                <section>
+                  <h4>Medidas de Centralidad en Redes Científicas</h4>
+
+                  <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                    En el análisis de redes científicas, las <strong>medidas de centralidad</strong> permiten identificar los actores más relevantes dentro de la red, ya sea por su conectividad, posición estratégica o influencia estructural.
+                  </p>
+
+                  <p class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                    Las métricas más utilizadas en bibliometría incluyen:
+                  </p>
+
+                  <ul class="fragment fade-in" style="font-size: 19px; text-align: justify;">
+                    <li><strong>Centralidad de Grado (Degree Centrality)</strong></li>
+                    <li><strong>Centralidad de Cercanía (Closeness Centrality)</strong></li>
+                    <li><strong>Centralidad de Intermediación (Betweenness Centrality)</strong></li>
+                    <li><strong>Centralidad de Vector Propio (Eigenvector Centrality)</strong></li>
+                  </ul>
+
+                  <p class="fragment fade-in" style="font-size: 14px; margin-top: 10px; text-align: left;">
+                    Bamakan, S. M. H., Nurgaliev, I., and Qu, Q. (2019). <em>The applications of centrality measures in social network analysis: A survey</em>. <strong>Knowledge-Based Systems, 212</strong>, 106596. https://doi.org/10.1016/j.knosys.2020.106596<br>
+                    Golbeck, J. (2015). <em>Analyzing the social web</em>. Morgan Kaufmann.
+                  </p>
+                </section>
+-->                        
+              
+           <section data-name="Tópicos">                                                                                                                    
+                <section>
+                  <h4>Modelación de Tópicos - NNMF</h4>
+
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 28px; text-align: justify;">
+                    Identificar tendencias, temas emergentes y áreas consolidadas.
+                  </p>
+
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 28px; text-align: justify;">
+                    Segmentar el conocimiento dentro de un campo.
+                  </p>
+                                    
+                  <p class="fragment fade-in-then-semi-out" style="font-size: 28px; text-align: justify;">
+                    Word Cloud $\rightarrow$ documentos representativos $\rightarrow$ Nombre del tópico 
+                  </p>
+
+                </section>
+
+                
+                <section>
+                    <h4>Non-negative Matrix Factorization</h4>
+                    
+                        <p class="fragment fade-down" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                            Algoritmo de Agrupación
+                            
+                            $$ \mathbf{X} = \mathbf{W} \mathbf{H} $$
+                            
+                            donde $\mathbf{X} \in \R^{p \times n}$, $\mathbf{W} \in \R^{p \times r}$ y $\mathbf{H} \in \R^{r \times n}$
+                        </p>                   
+                    
+                        <p class="fragment fade-down" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                            Norma de Frobenius: forma de medir la aproximación numérica de $\mathbf{X} \simeq \mathbf{W} \mathbf{H}$:
+                            
+                            $$ \text{Error} = \text{min} \left| \left| \mathbf{X} - \mathbf{W} \mathbf{H} \right| \right|_F^2 = \sum_{i,j} \left(\mathbf{X} - \mathbf{W} \mathbf{H}\right)_{i,j}^2 $$
+                        </p>   
+                                        
+                        <p class="fragment fade-down" style="font-size: 21px; text-align: justify; text-align-last: left;">
+                            Problema de optimización:
+                            
+                            $$ \underset{\mathbf{W},\mathbf{H}}{\text{min}} \,\, \text{Error} \quad \text{sujeto a} \quad W \ge 0 \,\,\, \text{y} \,\,\, H \ge 0 $$
+                        </p>     
+                    
+                    <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                        Shahnaz, F., Berry, M. W., Pauca, V. P., and Plemmons, R. J. (2006). Document clustering using nonnegative matrix factorization. Information Processing and Management, 42(2), 373-386.
+                    </p>
+                    
+                    <p class = "fragment fade-left" style="font-size: 15px; text-align: justify; text-align-last: left;">
+                        Heldens, S., Sclocco, A., Dreuning, H., van Werkhoven, B., Hijma, P., Maassen, J., and van Nieuwpoort, R. V. (2022). litstudy: A Python package for literature reviews. SoftwareX, 20, 101207.
+                    </p>                    
+                                        
+                </section>                
+
+
+<!--                              
+                <section>
+                  <h4>Modelación de Tópicos</h4>     
+                      <img src = "imagenes/defrost_embedding_3.png" width = "660">
+                </section>
+              
+-->              
+                <section>
+                  <h4>Modelación de Tópicos - Word Cloud</h4>     
+                      <img src = "imagenes/topic_wordclouds.png" width = "990">
+                </section>
+          
+              
+          
+  
+<!-- 
+Tópico 1: Energías Renovables, Sustentabilidad y Adaptación al Medio Ambiente             
+Tópico 2: Ciclos de reversa
+Tópico 3: Consumo Energético y Almacenamiento de Energía
+Tópico 4: Deshielo de Evaporador Mediante Sistemas Auxiliares y Bypass de Gas Caliente
+Tópico 5: Técnicas de control avanzado y modelado
+Tópico 6: Materiales de cambio de fase (PCM)
+Tópico 7: Diseño de aletas
+Tópico 8: Propiedades superficiales y vibraciones
+-->                                                                            
+                <section>
+                  <h4>Conclusión Final</h4>
+
+                  <div style="font-size: 20px; text-align: left;">
+                    <div class="fragment fade-in">
+                      <ul>
+                        <li>No existe una <strong>estrategia dominante</strong> para el deshielo de evaporadores.</li>
+                        <li>Los <strong>artículos más citados</strong> son revisiones.</li>
+                        <li>Existe <strong>espacio libre para innovar</strong> y explorar enfoques híbridos.</li>
+                        <li>Se requiere mayor <strong>colaboración internacional</strong> y una integración metodológica más sólida.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+             
+                          
+                <section>
+                  <!-- Logos superiores -->
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <!-- Logo izquierda -->
+                    <img src="imagenes/Universidad_de_La_Serena_escudo.png" style="height: 90px;">
+
+                    <!-- Logo centro -->
+                    <img src="imagenes/logo_c2mc_2025.png" style="width: 129px;">
+
+                    <!-- Logo derecha -->
+                    <img src="imagenes/logo_UCM.png" style="height: 93px;">
+                  </div>
+
+                  <!-- Título -->
+                  <h6 style="margin-top: 18px;">EXPLORACIÓN COMPUTACIONAL DE LITERATURA CIENTÍFICA MEDIANTE ANÁLISIS BIBLIOMÉTRICO E INTELIGENCIA ARTIFICIAL</h6>
+
+                  <!-- Autores -->
+                  <p style="font-size: 18px; text-align: center; margin-top: 15px;">
+                    <u>P. Pacheco</u><sup>1</sup>, I. Quispe<sup>2</sup> y L. Silva<sup>3</sup>
+                  </p>
+
+                  <!-- Instituciones -->
+                  <p style="font-size: 15px; text-align: center; line-height: 1.5; margin-top: 15px;">
+                    <sup>1</sup> Departamento de Ingeniería Mecánica – Universidad de La Serena <br>
+                    Benavente 980 – La Serena – CHILE <br>
+                    e-mail: ppacheco@userena.cl<br>
+                    
+                    <sup>2</sup> Departamento de Ingeniería en Alimentos – Universidad de La Serena <br>
+                    Av. Raúl Bitrán Nachary Nº 1305 – La Serena – CHILE <br>
+                    e-mail: iquispe@userena.cl<br>
+                    
+                    <sup>3</sup>Departamento de Ingeniería Mecánica – Universidad Técnica Federico Santa María<br>
+                    Avenida España 1680 –Valparaíso – CHILE <br>
+                    e-mail: luis.silval@usm.cl<br>
+                  </p>
+
+                  <!-- Congreso al pie -->
+                  <p style="font-size: 16px; text-align: center; margin-top: 25px;">
+                    <strong>XXIV Congreso Chileno de Mecánica Computacional</strong>
+                  </p>
+                </section>             
+                                                                                                       
+                                                                                     
+            </section>
+                
+                
+                
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/math/math.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+                margin: 0.0001,
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+                minScale: 1.,
+                maxScale: 1.2,
+                slideNumber: true,
+                previewLinks: 'auto',
+                simplemenu: {
+                    menuclass: "menu",
+                    activeclass: "active",
+                    activeelement: "li",
+                    selectby: "id",
+                    barhtml: {
+                        header: "",
+                        footer: ""
+                    },
+                    flat: true,
+                    scale: 0.67,
+                    csspath: ""
+               },
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, Simplemenu]
+			});
+		</script>
+        
+        
+	</body>
+</html>
+
